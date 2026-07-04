@@ -1,41 +1,32 @@
-export default function Contact() {
+export default function Footer() {
   return (
-    <section id="contact" className="bg-[#ff4b00] py-28 text-[#111111]">
-      <div className="mx-auto max-w-7xl px-6 md:px-14">
-        <div className="mb-16 flex items-center justify-between gap-6">
-          <p className="text-sm font-black uppercase tracking-[-0.02em]">
-            Contact
+    <footer className="bg-[#111111] px-5 py-10 text-[#fff1df] md:px-14">
+      <div className="mx-auto flex max-w-7xl flex-col gap-10 border-t-2 border-[#ff4b00] pt-8 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p className="text-5xl font-black uppercase leading-[0.8] tracking-[-0.08em] text-[#ff4b00] md:text-6xl">
+            Sounds
+            <br />
+            Good!
           </p>
 
-          <div className="hidden h-[2px] flex-1 bg-[#111111] md:block" />
+          <p className="mt-5 max-w-md text-xs font-medium uppercase tracking-[0.12em] text-[#fff1df]/70 md:text-sm">
+            Live music · Real emotion · Bespoke events
+          </p>
         </div>
 
-        <div className="grid gap-12 md:grid-cols-[1.2fr_0.8fr] md:items-end">
-          <h2 className="text-6xl font-black uppercase leading-[0.8] tracking-[-0.09em] md:text-8xl lg:text-9xl">
-            Let&apos;s
-            <br />
-            make it
-            <br />
-            sound
-            <br />
-            good.
-          </h2>
+        <div className="space-y-3 text-sm font-bold uppercase tracking-[0.08em] text-[#fff1df]/75 md:text-right">
+          <p>Paris / France</p>
 
-          <div>
-            <p className="mb-8 max-w-md text-xl font-medium leading-8">
-              Un événement, une scène, une idée, une atmosphère à créer.
-              Parlons-en simplement.
-            </p>
+          <a
+            href="mailto:lehiany@gmail.com"
+            className="block hover:text-[#ff4b00]"
+          >
+            lehiany@gmail.com
+          </a>
 
-            <a
-              href="mailto:lehiany@gmail.com"
-              className="inline-flex rounded-md border-2 border-[#111111] bg-[#111111] px-8 py-4 text-sm font-black uppercase tracking-[-0.02em] text-[#fff1df] transition hover:bg-[#fff1df] hover:text-[#111111]"
-            >
-              Écrire à Sounds Good →
-            </a>
-          </div>
+          <p>© 2026 Sounds Good!</p>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
