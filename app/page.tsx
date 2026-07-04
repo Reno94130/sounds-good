@@ -5,7 +5,7 @@ import Film from "../components/Film";
 import Gallery from "../components/Gallery";
 import References from "../components/References";
 import Contact from "../components/Contact";
-
+import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
@@ -16,6 +16,7 @@ export default function Home() {
       <Gallery />
       <References />
       <Contact />
+      <Footer />
     </>
   );
 }
