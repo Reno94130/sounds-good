@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/35 to-transparent" />
 
       <div className="relative z-10 flex min-h-screen items-center px-6 md:px-16">
-        <div className="max-w-4xl">
+        <div className="max-w-2xl pt-20 md:pt-0">
           <p className="mb-6 font-['var(--font-cormorant)'] text-4xl font-semibold tracking-[0.08em] text-white md:text-5xl">
             Sounds Good!
           </p>
