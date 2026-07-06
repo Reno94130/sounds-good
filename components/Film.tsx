@@ -3,10 +3,9 @@ export default function Film() {
     <section id="film" className="bg-[#111111] py-20 text-[#fff1df] md:py-28">
       <div className="mx-auto max-w-7xl px-5 md:px-14">
         <div className="mb-12 flex items-center justify-between gap-6 md:mb-16">
-          <p className="text-sm font-black uppercase tracking-[-0.02em] text-[#ff4b00]">
-            Film
-          </p>
-
+         <p className="text-xl font-black uppercase tracking-[0.08em] text-[#ff4b00] md:text-2xl">
+  Film
+</p>
           <div className="hidden h-[2px] flex-1 bg-[#ff4b00] md:block" />
         </div>
 
