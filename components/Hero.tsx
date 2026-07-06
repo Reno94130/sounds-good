@@ -36,15 +36,21 @@ export default function Hero() {
               />
             </div>
 
-            <div className="mt-5 inline-block -rotate-1 bg-[#111111] px-4 py-3 text-xl font-black italic uppercase tracking-[-0.04em] text-white md:mt-6 md:px-5 md:text-3xl">
-              Live music. Real emotion.
-            </div>
+           <div className="mt-6 max-w-xl border-l-4 border-[#ff4b00] pl-5 md:mt-7">
+  <p className="text-2xl font-black uppercase leading-[0.95] tracking-[-0.04em] text-[#111111] md:text-4xl">
+    Live music.
+    <br />
+    Real emotion.
+  </p>
+</div>
 
-            <p className="mt-7 max-w-xl text-lg font-medium leading-7 md:mt-8 md:text-xl md:leading-8">
-              Duo, trio, quartet ou groupe complet.
-              <br />
-              Une expérience musicale taillée pour votre événement.
-            </p>
+    <div className="mt-7 max-w-xl">
+  <p className="inline bg-[#111111] px-3 py-1 text-2xl font-black uppercase leading-[1.25] tracking-[-0.04em] text-[#fff1df] box-decoration-clone md:text-3xl">
+    Des expériences musicales vivantes,
+    <br />
+    pensées pour marquer les esprits.
+  </p>
+</div>
 
             <div className="mt-8 flex flex-wrap gap-3 md:mt-10 md:gap-4">
               <a
