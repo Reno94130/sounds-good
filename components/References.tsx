@@ -11,39 +11,41 @@ const references = [
 
 export default function References() {
   return (
-    <section className="bg-[#111111] py-28 text-[#fff1df]">
-      <div className="mx-auto max-w-7xl px-6 md:px-14">
-        <div className="mb-16 flex items-center justify-between gap-6">
-          <p className="text-xl font-black uppercase tracking-[0.08em] md:text-2xl">
-  Contact
-</p>
-
+    <section className="bg-[#111111] py-20 text-[#fff1df] md:py-28">
+      <div className="mx-auto max-w-7xl px-5 md:px-14">
+        <div className="mb-12 flex items-center justify-between gap-6 md:mb-16">
+          <p className="text-xl font-black uppercase tracking-[0.08em] text-[#ff4b00] md:text-2xl">
+            References
+          </p>
           <div className="hidden h-[2px] flex-1 bg-[#ff4b00] md:block" />
         </div>
 
-        <div className="mb-14 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
-          <h2 className="text-6xl font-black uppercase leading-[0.82] tracking-[-0.08em] text-[#ff4b00] md:text-8xl">
+        <div className="grid gap-10 md:grid-cols-[0.85fr_1.15fr] md:items-start">
+          <h2 className="max-w-md text-4xl font-black uppercase leading-[0.9] tracking-[-0.05em] text-[#ff4b00] md:text-6xl">
             Trusted
             <br />
-            on real
-            <br />
-            stages.
+            moments.
           </h2>
 
-          <p className="max-w-xl text-xl font-medium leading-8 text-[#fff1df]/75">
-            Des lieux, marques et événements exigeants ont déjà fait confiance à cette approche du live.
-          </p>
-        </div>
+          <div>
+            <p className="mb-10 max-w-2xl border-l-4 border-[#ff4b00] pl-6 text-lg font-semibold leading-7 tracking-[-0.01em] text-[#fff1df]/85 md:text-xl md:leading-8">
+              Des marques, lieux et événements exigeants ont déjà fait confiance
+              à cette approche du live.
+            </p>
 
-        <div className="grid gap-4 md:grid-cols-4">
-          {references.map((reference) => (
-            <div
-              key={reference}
-              className="rounded-2xl border-2 border-[#ff4b00] px-5 py-8 text-center text-xl font-black uppercase leading-none tracking-[-0.06em] transition hover:bg-[#ff4b00] hover:text-[#111111]"
-            >
-              {reference}
+            <div className="grid gap-x-10 border-t border-[#fff1df]/20 md:grid-cols-2">
+              {references.map((reference) => (
+                <div
+                  key={reference}
+                  className="border-b border-[#fff1df]/20 py-5"
+                >
+                  <p className="text-lg font-semibold uppercase tracking-[0.06em] text-[#fff1df]/90 md:text-xl">
+                    {reference}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
