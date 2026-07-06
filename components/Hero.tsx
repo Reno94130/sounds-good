@@ -44,11 +44,11 @@ export default function Hero() {
   </p>
 </div>
 
-    <div className="mt-7 max-w-xl">
-  <p className="inline bg-[#111111] px-3 py-1 text-2xl font-black uppercase leading-[1.25] tracking-[-0.04em] text-[#fff1df] box-decoration-clone md:text-3xl">
+   <div className="mt-8 max-w-xl">
+  <p className="border-t-2 border-[#111111] pt-5 text-lg font-semibold leading-7 tracking-[-0.01em] text-[#111111] md:text-xl md:leading-8">
     Des expériences musicales vivantes,
-    <br />
-    pensées pour marquer les esprits.
+    pensées pour créer une présence, une énergie,
+    un souvenir.
   </p>
 </div>
 
