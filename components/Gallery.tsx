@@ -56,12 +56,13 @@ export default function Gallery() {
                   : "aspect-[4/3]"
               }`}
             >
-              <Image
-                src={image.src}
-                alt={image.title}
-                fill
-                className="object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0"
-              />
+            <Image
+  src={image.src}
+  alt={image.title}
+  fill
+  sizes="(max-width: 768px) 100vw, 50vw"
+  className="object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0"
+/>
 
               <div className="absolute inset-0 bg-black/20" />
 
