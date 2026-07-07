@@ -36,8 +36,11 @@ export default function Hero() {
               />
             </div>
 
-           <div className="mt-6 max-w-xl border-l-4 border-[#ff4b00] pl-5 md:mt-7">
-  <p className="text-2xl font-black uppercase leading-[0.95] tracking-[-0.04em] text-[#111111] md:text-4xl">
+          <div className="mt-6 max-w-xl border-l-4 border-[#ff4b00] pl-5 md:mt-7">
+  <p
+    className="text-2xl font-black uppercase leading-[0.95] tracking-[-0.04em] text-[#111111] md:text-4xl"
+    style={{ fontFamily: "var(--font-inter), Arial, Helvetica, sans-serif" }}
+  >
     Live music.
     <br />
     Real emotion.
@@ -74,7 +77,10 @@ export default function Hero() {
 
             <div className="absolute bottom-10 right-4 h-[180px] w-[300px] rotate-[-10deg] rounded-[50%] bg-[#ff4b00] md:h-[260px] md:w-[520px]" />
 
-            <div className="absolute right-4 top-20 max-w-[360px] text-right text-6xl font-black uppercase leading-[0.82] tracking-[-0.04em] md:right-16 md:top-28 md:max-w-[560px] md:text-8xl lg:text-9xl">
+            <div
+  className="absolute right-4 top-20 max-w-[360px] text-right text-6xl font-black uppercase leading-[0.82] tracking-[-0.04em] md:right-16 md:top-28 md:max-w-[560px] md:text-8xl lg:text-9xl"
+  style={{ fontFamily: "var(--font-inter), Arial, Helvetica, sans-serif" }}
+>
               Music
               <br />
               Taste

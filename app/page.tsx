@@ -6,17 +6,19 @@ import Gallery from "../components/Gallery";
 import References from "../components/References";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Story from "../components/Story";
 export default function Home() {
   return (
     <>
       <Hero />
-      <Experience />
-      <Services />
-      <Film />
-      <Gallery />
-      <References />
-      <Contact />
-      <Footer />
+<Story />
+<Experience />
+<Services />
+<Film />
+<Gallery />
+<References />
+<Contact />
+<Footer />
     </>
   );
 }

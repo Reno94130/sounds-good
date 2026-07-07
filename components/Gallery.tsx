@@ -2,19 +2,19 @@ import Image from "next/image";
 
 const images = [
   {
-    src: "/hero.jpg",
+    src: "/gallery1.jpg",
     title: "Live",
   },
   {
-    src: "/hero.jpg",
-    title: "Energy",
-  },
+  src: "/gallery1.jpg",
+  title: "Energy",
+},
   {
-    src: "/hero.jpg",
+    src: "/gallery1.jpg",
     title: "Mood",
   },
   {
-    src: "/hero.jpg",
+    src: "/gallery1.jpg",
     title: "Moment",
   },
 ];
