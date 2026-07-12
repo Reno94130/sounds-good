@@ -26,12 +26,25 @@ export default function Contact() {
               Parlons-en simplement.
             </p>
 
-            <a
-              href="mailto:lehiany@gmail.com"
-              className="inline-flex border-2 border-[#111111] bg-[#111111] px-7 py-4 text-sm font-black uppercase tracking-[0.04em] text-[#fff1df] transition hover:bg-[#ff4b00] hover:text-[#111111] md:px-9 md:py-5 md:text-base"
-            >
-              Écrire à Sounds Good →
-            </a>
+            <div className="flex flex-col gap-4">
+              <a
+                href="mailto:contact@soundsgoodmusic.fr"
+                className="inline-flex w-fit border-2 border-[#111111] bg-[#111111] px-7 py-4 text-sm font-black uppercase tracking-[0.04em] text-[#fff1df] transition hover:bg-[#ff4b00] hover:text-[#111111] md:px-9 md:py-5 md:text-base"
+              >
+                Écrire à Sounds Good →
+              </a>
+
+              <a
+                href="tel:+33650965991"
+                className="text-lg font-bold tracking-[-0.02em] transition hover:opacity-60 md:text-xl"
+              >
+                06 50 96 59 91
+              </a>
+
+              <p className="text-sm font-medium text-[#111111]/70">
+                contact@soundsgoodmusic.fr
+              </p>
+            </div>
           </div>
         </div>
       </div>
