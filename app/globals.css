@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fff8ed;
+  --foreground: #17110d;
 }
 
 @theme inline {
@@ -17,6 +17,11 @@ body {
   font-family: var(--font-manrope), Arial, Helvetica, sans-serif;
 }
 
+::selection {
+  background: #ff5a1f;
+  color: #fff8ed;
+}
+
 h1,
 h2,
 h3,
@@ -24,4 +29,25 @@ nav,
 button,
 a {
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+.reference-pulse {
+  animation: reference-float 6s ease-in-out infinite;
+}
+
+@keyframes reference-float {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reference-pulse {
+    animation: none;
+  }
 }
