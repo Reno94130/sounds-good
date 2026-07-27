@@ -6,29 +6,25 @@ const images = [
     title: "Live",
   },
   {
-  src: "/gallery1.jpg",
-  title: "Energy",
-},
-  {
-    src: "/gallery1.jpg",
-    title: "Mood",
+    src: "/gallery2.jpg",
+    title: "Energy",
   },
   {
-    src: "/gallery1.jpg",
-    title: "Moment",
+    src: "/gallery3.png",
+    title: "Mood",
   },
 ];
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="bg-[#fff1df] py-20 text-[#111111] md:py-28">
+    <section id="gallery" className="bg-[#fff8ed] py-20 text-[#17110d] md:py-28">
       <div className="mx-auto max-w-7xl px-5 md:px-14">
         <div className="mb-12 flex items-center justify-between gap-6 md:mb-16">
-          <p className="text-xl font-black uppercase tracking-[0.08em] text-[#ff4b00] md:text-2xl">
-  Gallery
-</p>
+          <p className="text-xl font-black uppercase tracking-[0.08em] text-[#ff5a1f] md:text-2xl">
+            Gallery
+          </p>
 
-          <div className="hidden h-[2px] flex-1 bg-[#111111] md:block" />
+          <div className="hidden h-[2px] flex-1 bg-[#17110d] md:block" />
         </div>
 
         <div className="mb-12 grid gap-8 md:mb-14 md:grid-cols-[1fr_1.1fr] md:items-end">
@@ -50,23 +46,23 @@ export default function Gallery() {
           {images.map((image, index) => (
             <div
               key={image.title}
-              className={`group relative overflow-hidden rounded-[1.5rem] border-2 border-[#111111] bg-[#111111] md:rounded-[2rem] ${
+              className={`group relative overflow-hidden border-2 border-[#17110d] bg-[#17110d] shadow-[10px_10px_0_rgba(255,90,31,0.9)] ${
                 index === 0
                   ? "aspect-[4/5] md:row-span-2 md:aspect-auto"
                   : "aspect-[4/3]"
               }`}
             >
-            <Image
-  src={image.src}
-  alt={image.title}
-  fill
-  sizes="(max-width: 768px) 100vw, 50vw"
-  className="object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0"
-/>
+              <Image
+                src={image.src}
+                alt={image.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0"
+              />
 
-              <div className="absolute inset-0 bg-black/20" />
+              <div className="absolute inset-0 bg-[#17110d]/12" />
 
-              <div className="absolute bottom-4 left-4 rotate-[-3deg] bg-[#ff4b00] px-4 py-3 text-2xl font-black uppercase tracking-[-0.07em] text-[#111111] md:bottom-5 md:left-5 md:px-5 md:text-3xl">
+              <div className="absolute bottom-4 left-4 bg-[#ff5a1f] px-4 py-3 text-2xl font-black uppercase tracking-[-0.07em] text-[#17110d] md:bottom-5 md:left-5 md:px-5 md:text-3xl">
                 {image.title}
               </div>
             </div>

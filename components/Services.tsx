@@ -19,13 +19,13 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-[#fff8ee] py-20 text-[#111111] md:py-28">
+    <section id="services" className="bg-[#fff8ed] py-20 text-[#17110d] md:py-28">
       <div className="mx-auto max-w-7xl px-5 md:px-14">
         <div className="mb-12 flex items-center justify-between gap-6 md:mb-16">
-          <p className="text-xl font-black uppercase tracking-[0.08em] text-[#ff4b00] md:text-2xl">
+          <p className="text-xl font-black uppercase tracking-[0.08em] text-[#ff5a1f] md:text-2xl">
             Services
           </p>
-          <div className="hidden h-[2px] flex-1 bg-[#111111] md:block" />
+          <div className="hidden h-[2px] flex-1 bg-[#17110d] md:block" />
         </div>
 
         <h2 className="mb-12 max-w-5xl text-5xl font-black uppercase leading-[0.82] tracking-[-0.08em] sm:text-6xl md:mb-16 md:text-8xl">
@@ -43,8 +43,8 @@ export default function Services() {
             return (
               <div
                 key={service.title}
-                className={`rounded-[1.5rem] border-2 border-[#111111] p-6 md:rounded-[2rem] md:p-10 ${
-                  isOrange ? "bg-[#ff4b00]" : "bg-[#fff1df]"
+                className={`border-2 border-[#17110d] p-6 transition hover:-translate-y-1 md:p-10 ${
+                  isOrange ? "bg-[#ff5a1f]" : "bg-[#fff3e2]"
                 }`}
               >
                 <div className="mb-8 text-5xl font-black leading-none tracking-[-0.08em] md:mb-10 md:text-7xl">
