@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const images = [
+const images: { src: string; title: string; portrait?: boolean }[] = [
   {
     src: "/gallery1.jpg",
     title: "Live",
@@ -12,6 +12,15 @@ const images = [
   {
     src: "/gallery3.png",
     title: "Mood",
+  },
+  {
+    src: "/gallery4.webp",
+    title: "Quartet",
+  },
+  {
+    src: "/gallery5.webp",
+    title: "Paris",
+    portrait: true,
   },
 ];
 
@@ -49,15 +58,32 @@ export default function Gallery() {
               className={`group relative overflow-hidden border-2 border-[#17110d] bg-[#17110d] shadow-[10px_10px_0_rgba(255,90,31,0.9)] ${
                 index === 0
                   ? "aspect-[4/5] md:row-span-2 md:aspect-auto"
-                  : "aspect-[4/3]"
+                  : image.portrait
+                    ? "aspect-[2/3] md:aspect-[4/3]"
+                    : "aspect-[4/3]"
               }`}
             >
+              {image.portrait && (
+                <Image
+                  src={image.src}
+                  alt=""
+                  fill
+                  aria-hidden="true"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="hidden scale-110 object-cover opacity-35 blur-xl grayscale md:block"
+                />
+              )}
+
               <Image
                 src={image.src}
                 alt={image.title}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                className={`transition duration-700 md:grayscale md:group-hover:grayscale-0 ${
+                  image.portrait
+                    ? "object-cover md:object-contain md:group-hover:scale-[1.02]"
+                    : "object-cover md:group-hover:scale-105"
+                }`}
               />
 
               <div className="absolute inset-0 bg-[#17110d]/12" />
