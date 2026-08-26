@@ -15,7 +15,7 @@ const images: { src: string; title: string; portrait?: boolean }[] = [
   },
   {
     src: "/gallery4.webp",
-    title: "Quartet",
+    title: "Trio",
   },
   {
     src: "/gallery5.webp",
@@ -55,7 +55,7 @@ export default function Gallery() {
           {images.map((image, index) => (
             <div
               key={image.title}
-              className={`group relative overflow-hidden border-2 border-[#17110d] bg-[#17110d] shadow-[10px_10px_0_rgba(255,90,31,0.9)] ${
+              className={`group relative overflow-hidden bg-[#fff8ed] ${
                 index === 0
                   ? "aspect-[4/5] md:row-span-2 md:aspect-auto"
                   : image.portrait
@@ -87,10 +87,6 @@ export default function Gallery() {
               />
 
               <div className="absolute inset-0 bg-[#17110d]/12" />
-
-              <div className="absolute bottom-4 left-4 bg-[#ff5a1f] px-4 py-3 text-2xl font-black uppercase tracking-[-0.07em] text-[#17110d] md:bottom-5 md:left-5 md:px-5 md:text-3xl">
-                {image.title}
-              </div>
             </div>
           ))}
         </div>
