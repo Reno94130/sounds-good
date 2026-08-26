@@ -64,7 +64,7 @@ export default function Hero() {
                 Experience
               </a>
               <a href="#services" className="transition hover:text-[#ff5a1f]">
-                Services
+                Sur mesure
               </a>
               <a href="#film" className="transition hover:text-[#ff5a1f]">
                 Film

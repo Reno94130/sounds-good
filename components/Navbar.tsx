@@ -8,7 +8,7 @@ export default function Navbar() {
 
         <div className="hidden gap-8 text-white/65 md:flex">
           <a href="#experience" className="transition hover:text-white">Experience</a>
-          <a href="#services" className="transition hover:text-white">Services</a>
+          <a href="#services" className="transition hover:text-white">Sur mesure</a>
           <a href="#film" className="transition hover:text-white">Film</a>
           <a href="#contact" className="transition hover:text-white">Contact</a>
         </div>

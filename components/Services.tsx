@@ -1,20 +1,8 @@
-const services = [
-  {
-    title: "Hotels",
-    text: "Créer une atmosphère musicale élégante, vivante et adaptée à vos invités.",
-  },
-  {
-    title: "Corporate",
-    text: "Donner une signature forte à vos cocktails, dîners, lancements ou soirées privées.",
-  },
-  {
-    title: "Private",
-    text: "Des formats intimistes ou festifs pour des moments personnels et mémorables.",
-  },
-  {
-    title: "Gastronomy",
-    text: "Associer musique, goût et émotion autour d’expériences sur mesure.",
-  },
+const expertise = [
+  "Direction artistique",
+  "Sélection des musiciens",
+  "Format sur mesure",
+  "Coordination musicale",
 ];
 
 export default function Services() {
@@ -23,45 +11,51 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-5 md:px-14">
         <div className="mb-12 flex items-center justify-between gap-6 md:mb-16">
           <p className="text-xl font-black uppercase tracking-[0.08em] text-[#ff5a1f] md:text-2xl">
-            Services
+            Sur mesure
           </p>
           <div className="hidden h-[2px] flex-1 bg-[#17110d] md:block" />
         </div>
 
-        <h2 className="mb-12 max-w-5xl text-5xl font-black uppercase leading-[0.82] tracking-[-0.08em] sm:text-6xl md:mb-16 md:text-8xl">
-          One event.
+        <h2 className="max-w-5xl text-5xl font-black uppercase leading-[0.82] tracking-[-0.08em] sm:text-6xl md:text-8xl">
+          Chaque lieu
           <br />
-          One energy.
-          <br />
-          One sound.
+          a son rythme.
         </h2>
 
-        <div className="grid gap-4 md:grid-cols-2 md:gap-5">
-          {services.map((service, index) => {
-            const isOrange = index === 1 || index === 3;
+        <div className="mt-12 grid gap-12 border-t-2 border-[#17110d] pt-10 md:mt-16 md:grid-cols-[1.15fr_0.85fr] md:gap-20 md:pt-14">
+          <div>
+            <p className="max-w-3xl text-2xl font-bold leading-tight md:text-4xl md:leading-tight">
+              Sounds Good imagine des expériences de jazz live sur mesure pour
+              les hôtels, les entreprises, les lieux culturels et les
+              événements privés.
+            </p>
 
-            return (
+            <p className="mt-8 max-w-2xl text-lg font-medium leading-8 md:text-xl">
+              Chaque projet est pensé selon le lieu, le public et l’atmosphère
+              recherchée, du duo intimiste au groupe complet.
+            </p>
+          </div>
+
+          <div className="border-y-2 border-[#17110d]">
+            {expertise.map((item, index) => (
               <div
-                key={service.title}
-                className={`border-2 border-[#17110d] p-6 transition hover:-translate-y-1 md:p-10 ${
-                  isOrange ? "bg-[#ff5a1f]" : "bg-[#fff3e2]"
-                }`}
+                key={item}
+                className="flex items-center gap-5 border-b border-[#17110d]/35 py-5 last:border-b-0 md:py-6"
               >
-                <div className="mb-8 text-5xl font-black leading-none tracking-[-0.08em] md:mb-10 md:text-7xl">
+                <span className="text-sm font-black text-[#ff5a1f]">
                   0{index + 1}
-                </div>
-
-                <h3 className="text-4xl font-black uppercase leading-[0.85] tracking-[-0.08em] md:text-5xl">
-                  {service.title}
-                </h3>
-
-                <p className="mt-5 max-w-md text-base font-medium leading-7 md:mt-6 md:text-lg">
-                  {service.text}
+                </span>
+                <p className="text-lg font-black uppercase leading-tight md:text-xl">
+                  {item}
                 </p>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
+
+        <p className="mt-12 border-y border-[#17110d]/35 py-6 text-sm font-black uppercase leading-7 tracking-[0.08em] text-[#17110d]/75 md:mt-16 md:text-base">
+          Hôtels · Entreprises · Lieux culturels · Événements privés
+        </p>
       </div>
     </section>
   );
