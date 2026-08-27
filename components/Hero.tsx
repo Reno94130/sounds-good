@@ -72,16 +72,13 @@ export default function Hero() {
               <a href="#gallery" className="transition hover:text-[#ff5a1f]">
                 Gallery
               </a>
-              <a href="#contact" className="transition hover:text-[#ff5a1f]">
-                Contact
-              </a>
             </nav>
 
             <a
               href="#contact"
               className="whitespace-nowrap border-2 border-[#ff5a1f] bg-[#fff8ed] px-2 py-2 text-[0.58rem] font-black uppercase tracking-[0.07em] text-[#ff5a1f] transition hover:bg-[#ff5a1f] hover:text-[#17110d] sm:px-3 sm:py-3 sm:text-[0.68rem] sm:tracking-[0.1em] md:px-7 md:text-sm"
             >
-              Book an event →
+              Parlons-en ↗
             </a>
           </div>
         </header>
@@ -115,23 +112,17 @@ export default function Hero() {
 
             <div className="mt-5 h-[4px] w-[72px] bg-[#ff5a1f] md:mt-7 md:w-[92px]" />
 
-            <p className="mt-6 max-w-md text-[1.08rem] font-bold leading-tight text-[#fff8ed] md:mt-8 md:text-[1.55rem]">
-              Jazz Live
+            <p className="mt-6 max-w-lg text-[1.08rem] font-bold leading-tight text-[#fff8ed] md:mt-8 md:text-[1.55rem]">
+              Jazz live sur mesure pour vos événements.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-3 md:mt-10 md:gap-5">
+            <div className="mt-8 md:mt-10">
               <a
                 href="#film"
-                className="bg-[#ff5a1f] px-6 py-3 text-xs font-black uppercase tracking-[0.09em] text-[#17110d] transition hover:bg-[#fff8ed] md:px-10 md:py-5 md:text-base"
+                className="inline-flex items-center gap-2 border-b border-[#fff8ed]/55 pb-1 text-xs font-black uppercase tracking-[0.09em] text-[#fff8ed] transition hover:border-[#ff5a1f] hover:text-[#ff5a1f] md:text-sm"
               >
-                Watch the film ▶
-              </a>
-
-              <a
-                href="#contact"
-                className="bg-[#fff8ed] px-6 py-3 text-xs font-black uppercase tracking-[0.09em] text-[#17110d] transition hover:bg-[#ff5a1f] md:px-10 md:py-5 md:text-base"
-              >
-                Contact ↗
+                <span aria-hidden="true">▶</span>
+                Voir le film
               </a>
             </div>
           </div>
