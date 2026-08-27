@@ -5,7 +5,7 @@ const references = [
   "Kenzo",
   "Safran",
   "Rotary Club",
-  "RMN",
+  "GrandPalaisRmn",
   "Groupe Partouche",
 ];
 
