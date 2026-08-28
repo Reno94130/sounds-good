@@ -9,6 +9,13 @@ const featuredReferences = [
     className: "w-[92px] md:w-[108px]",
   },
   {
+    name: "Safran",
+    src: "/brand-logos/safran.png",
+    width: 4616,
+    height: 1583,
+    className: "w-[94px] md:w-[108px]",
+  },
+  {
     name: "Givenchy",
     src: "/brand-logos/givenchy.svg",
     width: 195,
@@ -59,7 +66,7 @@ export default function TrustBar() {
           Ils nous ont fait confiance
         </p>
 
-        <ul className="mt-6 grid grid-cols-2 items-center gap-x-8 gap-y-6 sm:grid-cols-3 lg:grid-cols-6 lg:gap-x-10">
+        <ul className="mt-6 grid grid-cols-2 items-center gap-x-8 gap-y-6 sm:grid-cols-4 lg:grid-cols-7 lg:gap-x-8">
           {featuredReferences.map((reference) => (
             <li
               key={reference.name}
