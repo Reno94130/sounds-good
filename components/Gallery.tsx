@@ -1,25 +1,30 @@
 import Image from "next/image";
 
-const images: { src: string; title: string; portrait?: boolean }[] = [
+const images: { src: string; title: string; alt: string; portrait?: boolean }[] = [
   {
     src: "/gallery1.jpg",
     title: "Live",
+    alt: "Quartet de jazz Sounds Good en concert dans un lieu de réception",
   },
   {
     src: "/gallery2.jpg",
     title: "Energy",
+    alt: "Groupe de jazz avec saxophone, piano, contrebasse et batterie lors d’un événement",
   },
   {
     src: "/gallery3.png",
     title: "Mood",
+    alt: "Trio de jazz au piano, à la contrebasse et à la batterie",
   },
   {
     src: "/gallery4.webp",
     title: "Trio",
+    alt: "Trio de jazz Sounds Good en tenue de soirée dans un hôtel parisien",
   },
   {
     src: "/gallery5.webp",
     title: "Paris",
+    alt: "Groupe de jazz Sounds Good jouant devant une projection de la tour Eiffel",
     portrait: true,
   },
 ];
@@ -76,7 +81,7 @@ export default function Gallery() {
 
               <Image
                 src={image.src}
-                alt={image.title}
+                alt={image.alt}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className={`transition duration-700 md:grayscale md:group-hover:grayscale-0 ${

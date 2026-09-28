@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Background image */}
       <Image
         src="/hero-bg-clean.png"
-        alt="Sounds Good live jazz atmosphere"
+        alt="Musiciens de jazz Sounds Good lors d’un événement à Paris"
         fill
         priority
         sizes="100vw"

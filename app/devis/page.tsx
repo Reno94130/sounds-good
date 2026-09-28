@@ -6,6 +6,12 @@ import PrintButton from "../../components/PrintButton";
 export const metadata: Metadata = {
   title: "Devis client - Sounds Good!",
   description: "Page de devis client Sounds Good! pour prestation live jazz.",
+  robots: {
+    index: false,
+    follow: false,
+    noarchive: true,
+    nosnippet: true,
+  },
 };
 
 const quoteInfo: Array<[string, string]> = [
