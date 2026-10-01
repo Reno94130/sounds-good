@@ -115,7 +115,7 @@ export default function Hero() {
             <div className="mt-5 h-[4px] w-[72px] bg-[#ff5a1f] md:mt-7 md:w-[92px]" />
 
             <p className="mt-6 max-w-lg text-[1.08rem] font-bold leading-tight text-[#fff8ed] md:mt-8 md:text-[1.55rem]">
-              Le jazz en est le langage ; votre occasion lui donne sa couleur.
+              Jazz live sur mesure pour vos événements.
             </p>
 
             <div className="mt-8 md:mt-10">
