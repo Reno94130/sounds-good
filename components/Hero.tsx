@@ -87,14 +87,16 @@ export default function Hero() {
         <main className="flex flex-1 items-center pt-8 md:pt-0">
           <div className="max-w-4xl">
             <h1
-              className="text-[3rem] font-black uppercase leading-[0.84] tracking-[-0.035em] text-[#fff8ed] sm:text-7xl md:text-8xl lg:text-[6rem]"
+              className="text-[2.35rem] font-black uppercase leading-[0.95] tracking-[-0.035em] text-[#fff8ed] sm:text-6xl md:text-7xl lg:text-[5rem]"
               style={{
                 fontFamily: "var(--font-inter), Arial, Helvetica, sans-serif",
               }}
             >
-              The art of
+              Une rencontre
               <br />
-              live jazz
+              musicale,
+              <br />
+              à votre image
               <span
                 aria-hidden="true"
                 className="ml-[0.06em] inline-block h-[0.14em] w-[0.14em] translate-y-[0.01em] rounded-full bg-[#ff5a1f]"
@@ -113,7 +115,7 @@ export default function Hero() {
             <div className="mt-5 h-[4px] w-[72px] bg-[#ff5a1f] md:mt-7 md:w-[92px]" />
 
             <p className="mt-6 max-w-lg text-[1.08rem] font-bold leading-tight text-[#fff8ed] md:mt-8 md:text-[1.55rem]">
-              Jazz live sur mesure pour vos événements.
+              Le jazz en est le langage ; votre occasion lui donne sa couleur.
             </p>
 
             <div className="mt-8 md:mt-10">

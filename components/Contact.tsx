@@ -10,20 +10,18 @@ export default function Contact() {
         </div>
 
         <div className="grid gap-12 md:grid-cols-[0.9fr_1.1fr] md:items-end">
-          <h2 className="text-5xl font-black uppercase leading-[0.88] tracking-[-0.06em] sm:text-6xl md:text-8xl">
-            Let&apos;s
-            <br />
-            make it
-            <br />
-            sound
-            <br />
-            good.
+          <h2 className="text-4xl font-black uppercase leading-[1.05] tracking-[-0.04em] sm:text-5xl md:text-6xl">
+            Tout commence par une conversation
           </h2>
 
           <div className="border-l-4 border-[#17110d] pl-6">
             <p className="mb-8 max-w-xl text-xl font-semibold leading-8 tracking-[-0.02em] md:text-2xl md:leading-9">
-              Un événement, une scène, une idée, une atmosphère à créer.
-              Parlons-en simplement.
+              Parlez-nous de votre occasion, de votre lieu, des musiques qui
+              vous accompagnent et de l’émotion que vous aimeriez partager.
+            </p>
+
+            <p className="mb-8 max-w-xl text-lg font-medium leading-8 md:text-xl">
+              C’est à partir de vous que l’expérience Sounds Good prend forme.
             </p>
 
             <div className="flex flex-col gap-4">
@@ -31,7 +29,7 @@ export default function Contact() {
                 href="mailto:contact@soundsgoodmusic.fr"
                 className="inline-flex w-fit border-2 border-[#17110d] bg-[#17110d] px-7 py-4 text-sm font-black uppercase tracking-[0.04em] text-[#fff8ed] transition hover:bg-[#fff8ed] hover:text-[#17110d] md:px-9 md:py-5 md:text-base"
               >
-                Écrire à Sounds Good →
+                Échangeons sur votre projet →
               </a>
 
               <a

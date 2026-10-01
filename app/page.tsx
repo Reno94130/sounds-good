@@ -32,7 +32,7 @@ const structuredData = {
       },
       image: "https://www.soundsgoodmusic.fr/hero-bg-clean.png",
       description:
-        "Expériences de jazz live sur mesure pour entreprises, hôtels, lieux culturels et événements privés.",
+        "Expériences musicales personnalisées, nourries de vos goûts, de votre histoire et du caractère de votre lieu : célébrations, rencontres professionnelles et soirées privées.",
       email: "contact@soundsgoodmusic.fr",
       telephone: "+33650965991",
       founder: {
@@ -54,10 +54,10 @@ const structuredData = {
     {
       "@type": "Service",
       "@id": "https://www.soundsgoodmusic.fr/#service",
-      name: "Jazz live sur mesure pour événements",
-      serviceType: "Direction artistique et musique jazz live événementielle",
+      name: "Expériences musicales sur mesure",
+      serviceType: "Direction artistique et jazz live sur mesure",
       description:
-        "Sélection des musiciens, format sur mesure et coordination musicale pour entreprises, hôtels, lieux culturels et événements privés.",
+        "Une rencontre musicale à votre image pour vos célébrations, rencontres professionnelles et soirées privées, à Paris et en France.",
       provider: {
         "@id": "https://www.soundsgoodmusic.fr/#organization",
       },

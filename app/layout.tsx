@@ -15,11 +15,11 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.soundsgoodmusic.fr"),
   title: {
-    default: "Sounds Good | Jazz live sur mesure pour événements à Paris",
+    default: "Sounds Good | Expériences musicales sur mesure à Paris",
     template: "%s | Sounds Good",
   },
   description:
-    "Sounds Good imagine des expériences de jazz live sur mesure pour entreprises, hôtels, lieux culturels et événements privés à Paris et en France.",
+    "Une expérience musicale à votre image : jazz live, célébrations, rencontres professionnelles et soirées privées à Paris et en France. Imaginons votre projet.",
   applicationName: "Sounds Good",
   authors: [{ name: "Sounds Good", url: "https://www.soundsgoodmusic.fr" }],
   creator: "Renaud Lehiany",
@@ -41,23 +41,23 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: "/",
     siteName: "Sounds Good",
-    title: "Sounds Good | Jazz live sur mesure pour événements à Paris",
+    title: "Sounds Good | Expériences musicales sur mesure à Paris",
     description:
-      "Des expériences de jazz live sur mesure pour entreprises, hôtels, lieux culturels et événements privés.",
+      "Une rencontre musicale, à votre image. Célébrations, rencontres professionnelles et soirées privées : imaginons ensemble votre expérience Sounds Good.",
     images: [
       {
         url: "/hero-bg-clean.png",
         width: 1672,
         height: 941,
-        alt: "Sounds Good, jazz live sur mesure pour vos événements",
+        alt: "Sounds Good, une rencontre musicale à votre image",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sounds Good | Jazz live sur mesure pour événements à Paris",
+    title: "Sounds Good | Expériences musicales sur mesure à Paris",
     description:
-      "Des expériences de jazz live sur mesure pour entreprises, hôtels, lieux culturels et événements privés.",
+      "Une rencontre musicale, à votre image. Célébrations, rencontres professionnelles et soirées privées : imaginons ensemble votre expérience Sounds Good.",
     images: ["/hero-bg-clean.png"],
   },
 };
