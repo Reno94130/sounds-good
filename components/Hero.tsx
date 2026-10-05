@@ -92,11 +92,9 @@ export default function Hero() {
                 fontFamily: "var(--font-inter), Arial, Helvetica, sans-serif",
               }}
             >
-              Une rencontre
+              The art of
               <br />
-              musicale,
-              <br />
-              à votre image
+              live jazz
               <span
                 aria-hidden="true"
                 className="ml-[0.06em] inline-block h-[0.14em] w-[0.14em] translate-y-[0.01em] rounded-full bg-[#ff5a1f]"
